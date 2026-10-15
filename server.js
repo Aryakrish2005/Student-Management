@@ -10,6 +10,22 @@ app.use(express.json());
 // Serve frontend files from public folder
 app.use(express.static("public"));
 
+
+
+const path = require("path");
+
+
+
+// Serve HTML, CSS, and JavaScript files
+app.use(express.static(path.join(__dirname, "public")));
+
+// Your API routes go below
+app.get("/api/tasks", (req, res) => {
+    res.json({ message: "Tasks loaded successfully" });
+});
+
+module.exports = app;
+
 // Temporary student data
 let students = [
     { id: 1, name: "Anu", course: "Computer Science" },
