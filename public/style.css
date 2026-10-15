@@ -1,0 +1,183 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #263248;
+    line-height: 1.6;
+}
+
+.header {
+    background: #17324d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #d7e4f1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #8ab9e6;
+    border-color: #2f6b9a;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2f6b9a;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #214f75;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.list-header h2 {
+    margin-bottom: 0;
+}
+
+.list-header input {
+    max-width: 280px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 14px 12px;
+    border-bottom: 1px solid #e4e9ef;
+}
+
+th {
+    background: #edf3f9;
+}
+
+.delete-btn {
+    background: #c83f4d;
+    padding: 8px 12px;
+}
+
+.delete-btn:hover {
+    background: #a72d39;
+}
+
+#message {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#message:empty {
+    display: none;
+}
+
+#message.success {
+    color: #187341;
+}
+
+#message.error {
+    color: #bd2937;
+}
+
+.empty-message {
+    text-align: center;
+    color: #687589;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #687589;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .list-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .list-header input {
+        max-width: none;
+    }
+}
